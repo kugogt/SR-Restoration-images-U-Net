@@ -13,7 +13,7 @@ Training pairs were generated using a custom degradation pipeline that includes:
 - **Downsampling (2×)**
 - **Gaussian Blur**
 - **Gaussian Noise**
-- **JPEG Compression** (NEW!)
+- **JPEG Compression** 
 
 ---
 
@@ -21,9 +21,9 @@ Training pairs were generated using a custom degradation pipeline that includes:
 - Implemented with `tf.data` for efficient loading and batching  
 - Data augmentation strategies include:
   - Random crop  
-  - Random horizontal & vertical flip (NEW!)
+  - Random horizontal & vertical flip 
   - Random rotation
-  - random brightness (NEW!), contrast (NEW!), saturation (NEW!), hue (NEW!)
+  - random brightness, contrast, saturation, hue
 
 ---
 
@@ -42,7 +42,7 @@ Compared to the original project, the U-Net was enhanced with multiple improveme
 ## 📉 Loss Functions
 - **MAE Loss**  
 - **Composite Loss**: MAE + α × Perceptual Loss (with VGG19 features)  
-- Normalization of images to `[-1, 1]` and **tanh activation** in the last layer -> preparing the ground for GAN-based losses (NEW!) 
+- Normalization of images to `[-1, 1]` and **tanh activation** in the last layer -> preparing the ground for GAN-based losses
 
 ---
 
