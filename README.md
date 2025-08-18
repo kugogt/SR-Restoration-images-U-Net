@@ -1,4 +1,4 @@
-# 🧠 Super-Resolution and Image Restoration (Image-to-Image Task) with Advanced U-Net – Flickr2K
+# 🧠 Super-Resolution and Image Restoration (Image-to-Image Task) with U-Net – Flickr2K
 
 Ciao! 👋 Welcome to this personal **Computer Vision** project, which represents an **evolution** of my original university work on image super-resolution.  
 While the original project focused on building a baseline pipeline, this upgraded version aims to incorporate state-of-the-art techniques, improve performance and create a more robust and realistic training setup.
