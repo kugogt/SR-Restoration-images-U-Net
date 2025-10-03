@@ -50,11 +50,11 @@ Compared to the original project, the U-Net was enhanced with multiple improveme
 - **Full Image Inference** is now supported (previous version required tiled inference).  
 - Multiple training runs were performed to compare architectures and degradation settings.  
 
-📷 Example result visualization.
+### Example result visualization.
 <img width="2460" height="515" alt="__results___46_0" src="https://github.com/user-attachments/assets/9ff77859-80d9-4916-aabb-7601000386c1" />
 <img width="2489" height="383" alt="__results___50_1" src="https://github.com/user-attachments/assets/518dd32d-a799-4e0e-a930-77a376f76af0" />
 
-📊 Final Evaluation Results
+### Final Evaluation Results
 
 | Model                                | Test Loss / Combined | Perceptual Loss | MAE    | PSNR   | SSIM  |
 |--------------------------------------|----------------------|-----------------|--------|--------|-------|
