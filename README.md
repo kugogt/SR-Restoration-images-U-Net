@@ -1,13 +1,13 @@
 # 🧠 Super-Resolution and Image Restoration (Image-to-Image Task) with U-Net – Flickr2K
 
-Ciao! 👋 Welcome to this personal **Computer Vision** project, which represents an **evolution** of my original university work on image super-resolution.  
+Ciao! Welcome to this personal **Computer Vision** project, which represents an **evolution** of my original university work on image super-resolution.  
 While the original project focused on building a baseline pipeline, this upgraded version aims to incorporate state-of-the-art techniques, improve performance and create a more robust and realistic training setup.
 
 The core of this project is a **new U-Net architecture** designed for **2× image super-resolution and restoration**, implemented with several modern deep learning components (before the widespread adoption of Transformer-based approaches).
 
 ---
 
-## 📦 Dataset & Degradation Process
+## Dataset & Degradation Process
 The model was trained on the **Flickr2K dataset**.  
 Training pairs were generated using a custom degradation pipeline that includes:
 - **Downsampling (2×)**
@@ -17,7 +17,7 @@ Training pairs were generated using a custom degradation pipeline that includes:
 
 ---
 
-## ⚙️ Data Pipeline & Augmentation
+## Data Pipeline & Augmentation
 - Implemented with `tf.data` for efficient loading and batching  
 - Data augmentation strategies include:
   - Random crop  
@@ -27,7 +27,7 @@ Training pairs were generated using a custom degradation pipeline that includes:
 
 ---
 
-## 🧩 U-Net Architecture – Upgrades
+## U-Net Architecture – Upgrades
 Compared to the original project, the U-Net was enhanced with multiple improvements:
 
 - **Squeeze-and-Excitation (SE) Blocks**  
@@ -39,14 +39,14 @@ Compared to the original project, the U-Net was enhanced with multiple improveme
 
 ---
 
-## 📉 Loss Functions
+## Loss Functions
 - **MAE Loss**  
 - **Composite Loss**: MAE + α × Perceptual Loss (with VGG19 features)  
 - Normalization of images to `[-1, 1]` and **tanh activation** in the last layer -> preparing the ground for GAN-based losses
 
 ---
 
-## 🔬 Experimentation & Results
+## Experimentation & Results
 - **Full Image Inference** is now supported (previous version required tiled inference).  
 - Multiple training runs were performed to compare architectures and degradation settings.  
 
@@ -65,8 +65,8 @@ Compared to the original project, the U-Net was enhanced with multiple improveme
 
 ---
 
-## 🚀 Next Steps: Preparing for GAN
+## Next Steps: Preparing for GAN
 This upgraded architecture was designed with future experiments in mind.  
 The use of **tanh** activation and normalized data makes it compatible with **GAN-based training**.  
 The next step will be adding **adversarial and perceptual loss** to further improve visual realism.  
-👉 Stay tuned!  
+Stay tuned! --> DONE [LINK](https://github.com/kugogt/SRRGAN-U-Net-PatchGan/tree/main)
